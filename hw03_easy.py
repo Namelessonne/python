@@ -4,10 +4,10 @@
 # Округление должно происходить по математическим правилам (0.6 --> 1, 0.4 --> 0).
 # Для решения задачи не используйте встроенные функции и функции из модуля math.
 def my_round(number, ndigits=0):
-        m = int('1' + '0' * ndigits)  # multiplier - how many positions to the right
-        q = number * m  # shift to the right by multiplier
-        c = int(q)  # new number
-        i = int((q - c) * 10)  # indicator number on the right
+        m = int('1' + '0' * ndigits)
+        q = number * m
+        c = int(q)
+        i = int((q - c) * 10)
         if i >= 5:
             c += 1
         return c / m
