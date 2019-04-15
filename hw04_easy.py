@@ -28,6 +28,7 @@ print(list(list5))
 # + Элемент положительный
 # + Элемент не кратен 4
 
+
 numbers = [-2, 3, 6, 9, 12, 13]
 result = list(filter(lambda x: (x % 3 == 0) and (x % 4 != 0) and (x > 0), numbers))
 print(result)
